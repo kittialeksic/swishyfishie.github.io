@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #458CB2;
+}
+
+.main-nav {
+  display: flex;
+  background-color: #458CB2;
+  margin: 0;
+  box-shadow:inset 0px 0px 10px 1px rgba(0, 0, 0, 0.075);
+  z-index: 100;
+  text-shadow: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 48, 70);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 450;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.container {
+  display:flex;
+  background-image: url('background.jpg');
+  background-color: rgba(57, 132, 202, 0.678);
+  align-items: center;
+  justify-content: center;
+  height: 30vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+
+.pcontainer {
+  display: flex;
+  text-align: justify;
+  margin: 0;
+  padding: 0 20px 5px 20px;
+  background-color: #1582BD;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0px -10px 300px 1px rgba(255, 255, 255, 0.418);
+  z-index: 10;
+  font-weight: 400;
+  color: rgb(5, 5, 5);
+  word-spacing: 0.2rem;
+  width: 100%;
+}
+
+
+
+.user-icon {
+  margin: 10px;
+  padding: 5px;
+  height: 7rem;
+  width: 7rem;
+}
+
+
+/* GRID */
+
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.box-img > img {
+  width: 100%;
+
+}
+
+.box-img {
+  background-color: rgb(56, 66, 82);
+  margin: 5px;
+  padding: 30px;
+}
