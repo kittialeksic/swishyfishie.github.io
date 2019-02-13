@@ -14,13 +14,19 @@ body {
 .main-nav {
   display: flex;
   background-color: #458CB2;
-  margin: 0;
+  margin: 0 ;
+  padding: 0;
   box-shadow: inset -20px -20px 50px 1px rgba(12, 50, 87, 0.418);
   z-index: 100;
   text-shadow: black;
+  border-bottom: 1px rgba(0, 0, 0, 0.801) solid;
+  border-left: 1px rgba(0, 0, 0, 0.801) solid;
+  border-right: 1px rgba(0, 0, 0, 0.801) solid;
+  
 }
 
-h1 {
+.heading {
+  margin: 0;
   font-size: 6vw;
   text-align: center;
 }
@@ -29,8 +35,10 @@ ul {
   list-style-type: none;
 }
 
-li {
+.navigation {
+  margin: 0 auto;
   padding: 10px;
+
 }
 
 a {
@@ -38,11 +46,15 @@ a {
   color: rgb(198, 236, 255);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 450;
+  padding: 6px;
+  border-radius: 5px;
   
 }
 
 a:hover {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+  background-color: rgb(44, 94, 121);
+  transition: .5s;
 }
 
 .push {
@@ -51,22 +63,12 @@ a:hover {
 
 .container {
   display:flex;
-  background-image: url('background.jpg');
-  background-color: rgba(57, 132, 202, 0.678);
-  align-items: center;
   justify-content: center;
-  height: 40vw;
+  flex-direction: column;
+  height: 30vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: aliceblue;
-  box-shadow: inset 5px 20px 500px 111px rgba(167, 232, 248, 0.103);
-  text-shadow: 7px 5px 13px rgba(0,0,0,0.5) ;
-  min-height: 500px; 
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .pcontainer {
@@ -74,13 +76,14 @@ a:hover {
   text-align: justify;
   margin: 0;
   padding: 0 20px 5px 20px;
-  background-color: rgba(10, 73, 107, 0.925);
+  background-color: rgba(10, 73, 107, 0.075);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: inset 0px 100px 200px 1px rgba(255, 255, 255, 0.274);
+  box-shadow: inset 0px 100px 200px 1px rgba(255, 255, 255, 0.048);
   z-index: 10;
   font-weight: 450;
   color: rgb(223, 245, 248);
   word-spacing: 0.3rem;
+  border: 1px rgba(0, 0, 0, 0.13) solid;
 
 }
 
@@ -102,6 +105,7 @@ a:hover {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   margin-top: 2rem;
   padding: 1rem;
+  
 }
 
 .box-img > img {
@@ -114,8 +118,85 @@ a:hover {
   margin: 10px;
   padding: 30px;
   border-radius: 50px;
+  border: 1px rgba(0, 0, 0, 0.295) solid;
 }
 
 .box-img:hover {
   box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.253);
+  transform: scale(1.1);
+  transition: .3s;
+  border: 1px rgba(0, 0, 0, 0.61) solid;
+}
+
+footer {
+  background-color: #458CB2;
+  height: 10%;
+  margin-top: 10px;
+  padding: 1px;
+  border-top: 1px black solid;
+}
+
+
+
+.smedia {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.fa {
+  padding: 10px 10px 10px;
+}
+
+.copyright {
+  display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .box-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin: 0 auto;
+   
+  }
+
+  a {
+    font-size: .9rem;
+  }
+
+  .container {
+    height: 80vw;
+  }
+  
+  .heading {
+    margin: 0;
+    font-size: 12vw;
+    text-align: center;
+    
+  }
+  
+  .maintitle {
+    border: 1px rgba(0, 0, 0, 0.048) solid;
+    background-color: rgba(0, 0, 0, 0.205);
+  }
+ 
 }
