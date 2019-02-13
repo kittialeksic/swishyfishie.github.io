@@ -30,19 +30,20 @@ h2 {
 }
 
 .heading {
+  padding-top: 10px;
   margin: 0;
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
 .heading2 {
   margin: 0;
-  font-size: 10vw;
+  font-size: 4vw;
   text-align: center;
   color: rgb(242, 251, 255);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.329);
+  text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.863);
   padding-bottom: 10px;
 }
 
@@ -51,14 +52,14 @@ ul {
 }
 
 .navigation {
-  margin: 0 auto;
+  margin-left: 5px;
   padding: 10px;
 
 }
 
 a {
   text-decoration: none;
-  color: rgb(198, 236, 255);
+  color: rgb(255, 255, 255);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 450;
   padding: 6px;
@@ -67,7 +68,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.11) ;
   background-color: rgb(44, 94, 121);
   transition: .5s;
 }
@@ -236,7 +237,7 @@ footer {
  
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
 
   body {
     margin: 0;
@@ -253,6 +254,14 @@ footer {
 
   a {
     font-size: 0.7rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .heading2 {
+    font-size: 2rem;
   }
 
   .box-img {
