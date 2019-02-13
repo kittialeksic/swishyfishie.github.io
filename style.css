@@ -171,6 +171,13 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
+  body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .box-img {
     display: grid;
     grid-template-columns: 1fr;
