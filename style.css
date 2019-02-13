@@ -174,17 +174,22 @@ footer {
   .box-img {
     display: grid;
     grid-template-columns: 1fr;
-    width: 50%;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
    
   }
 
+  .box-img > img {
+    padding-top: 15px;
+  }
   a {
     font-size: .9rem;
   }
 
   .container {
     height: 80vw;
+    
   }
   
   .heading {
@@ -195,8 +200,36 @@ footer {
   }
   
   .maintitle {
+    padding: 10px;
     border: 1px rgba(0, 0, 0, 0.048) solid;
     background-color: rgba(0, 0, 0, 0.205);
   }
  
+}
+
+@media only screen and (max-width: 320px) {
+
+  a {
+    font-size: 0.7rem;
+  }
+
+  .box-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+   
+  }
+
+  .box-img > img {
+    padding-top: 17px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-right: 4px;
+  }
 }
